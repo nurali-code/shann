@@ -1,0 +1,921 @@
+@import 'normolize'
+@import 'elements'
+@import 'header'
+@import 'modal'
+
+.main
+    position: relative
+    z-index: 1
+    padding: 0 0 20px
+    margin-bottom: 80px
+    overflow: hidden
+    color: #fff
+    &::before
+        content: ''
+        display: block
+        width: 100%
+        height: 58%
+        z-index: -1
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #000
+        background-image: url('../img/galxy.jpg')
+        background-repeat: no-repeat
+        background-position: center bottom
+        background-size: cover
+
+    h1
+        font-weight: 800
+        margin: 0 0 20px
+
+    &__text
+        font-size: 20px
+
+    &-content
+
+        .btn
+            margin-bottom: 45px
+
+    &-col
+        max-width: 400px
+        padding: 0 0 0 25px
+        box-shadow: -80px -10px 100px -80px rgba(0, 0, 0, 0.2)
+        border-radius: 10px
+        position: relative
+        left: -25px
+        z-index: 1
+
+    &__img
+        position: absolute
+        right: -15%
+        bottom: 0%
+        width: 79%
+        pointer-events: none
+        z-index: 1
+
+    &-item
+        display: inline-flex
+        align-items: center
+        background: linear-gradient(90deg, #77B5DD -81.63%, rgba(119, 181, 221, 0) 88.64%), #FFFFFF
+        border-radius: 15px
+        padding: 12px 35px 12px 14px
+        margin: 0 0 10px
+        p
+            font-weight: 400
+            color: #000
+            font-size: 16px
+            line-height: 140%
+            margin: 0 0 0 18px
+            span
+                font-size: 14px
+                opacity: .5
+
+        &.pop
+            background: linear-gradient(90deg, #77B5DD 0%, #000000 266.97%), #FFFFFF
+            box-shadow: -28px 20px 33px rgba(0, 0, 0, 0.25)
+            border-radius: 10px
+
+.features
+    .title
+
+    ul
+        &.wrap 
+            
+
+    h2
+        margin-bottom: 60px
+        text-transform: none
+    .wrap
+        position: relative
+        z-index: 1
+        max-width: 1700px
+        margin: 0 auto
+        padding: 60px 30px
+
+.comparison
+
+    mark
+        border-radius: 10px
+        display: inline-block
+        padding: 2px 8px
+        vertical-align: middle
+
+    .info
+        padding: 21px 40px 21px 90px
+        border: 1px solid #eee
+        border-radius: 60px
+        font-weight: 400
+        font-size: 16px
+        line-height: 150%
+        max-width: 870px
+        background-image: url('../img/information.svg')
+        background-repeat: no-repeat
+        background-position: center left 26px
+
+    .wrap
+        position: relative
+        b
+            display: block
+            font-weight: 900
+
+    .right, .left
+        width: 50%
+
+    &-img
+        width: 100%
+        margin-bottom: 14px
+        padding: 0 50px 20px
+        position: relative
+        z-index: 1
+        &::before
+            content: ''
+            display: block
+            width: 100%
+            height: 65%
+            bottom: 0
+            left: 0
+            position: absolute
+            z-index: -1
+            background-color: #FCE9EA
+            border-radius: 150px 0 0 150px
+
+        img
+            margin: 0 20px
+            width: 85%
+            max-width: 600px
+
+    .right
+        text-align: left
+
+    .left
+        text-align: right
+        .comparison
+            &-img::before,
+            &-item
+                background-color: #D9ECFB
+                border-radius: 0 150px 150px 0
+
+    &-heading
+        text-align: center
+        font-weight: 400
+        line-height: 130%
+        font-size: 26px
+        span
+            display: inline-block
+            text-align: right
+        b
+            font-size: 36px
+
+    &-total
+        font-size: 18px
+        line-height: 130%
+        position: absolute
+        top: 16%
+        left: 0
+        width: 100%
+        padding: 9px 150px 10px 0
+        text-align: center
+        background: linear-gradient(90deg, #D9ECFB 39.11%, #FADBDC 63.99%)
+        span
+            display: inline-block
+            text-align: left
+        b
+            font-size: 30px
+
+    &-item
+        padding: 13px 0
+        background-color: #FCE9EA
+        margin-bottom: 14px
+        border-radius: 150px 0 0 150px
+        p
+            margin: 0
+            display: inline-block
+            vertical-align: middle
+            font-size: 18px
+            line-height: 140%
+            b
+                font-size: 24px
+        img
+            display: inline-block
+            vertical-align: middle
+            width: 70px
+            height: 70px
+            margin: 0 18px
+
+@import 'slick'
+
+.guarantee
+    &-title
+        max-width: 540px
+        margin: 0 auto
+
+    &-img,
+    &-slider
+        width: 55%
+        position: relative
+        z-index: 1
+        text-align: center
+        &::before
+            content: ''
+            display: block
+            width: 100%
+            height: 65%
+            bottom: 50%
+            transform: translateY(50%)
+            left: 0
+            position: absolute
+            z-index: -1
+            background: linear-gradient(270deg, #00B6FF 0%, rgba(0, 182, 255, 0) 100%)
+        img
+            max-width: 90%
+
+    &-slider
+        display: flex
+        padding: 60px 0
+        &::before
+            width: 80%
+            left: 0
+            height: 100%
+            border-radius: 0
+            background: linear-gradient(270deg, rgba(0, 182, 255, 0) 0%, #00B6FF 100%)
+
+        .slick
+            &-prev
+                display: none
+            &-next
+                right: -30px
+
+    &-item
+        width: 310px
+        height: 460px
+        margin: 0 7.5px
+        img
+            width: 100%
+            height: 100%
+            max-width: 100%
+            border: 4px solid #FFFFFF
+            object-fit: cover
+        a
+            opacity: 1 !important
+
+    &-bottom
+        .guarantee-title
+            max-width: 30%
+
+.photoshoot
+    overflow: hidden
+    padding: 0 0
+    h2
+        text-align: center
+        max-width: 520px
+        margin-bottom: 0px
+
+    .slider
+        overflow: hidden
+        position: relative
+        &::before,
+        &::after
+            content: ''
+            display: block
+            width: 120%
+            height: 220px
+            position: absolute
+            left: -10%
+            top: -120px
+            z-index: 1
+            background-color: #fff
+            border-radius: 50%
+            pointer-events: none
+        &::after
+            top: auto
+            bottom: -120px
+
+        &-item
+            // min-width: 500px
+            // width: 500px
+            height: 850px
+            max-height: 115vh
+            margin: 0 7px
+            img
+                height: 100%
+                width: 100%
+                object-fit: cover
+
+.process
+    padding: 0 0 60px
+    h2
+        text-align: center
+        margin-bottom: 70px
+
+    ol
+        padding: 0
+        counter-reset: counter
+        list-style-type: none
+        align-items: stretch
+        margin: 0
+
+    li
+        counter-increment: counter
+        width: 32.5%
+        background-color: #FFFFFF
+        border: 1px solid rgba(0, 0, 0, 0.2)
+        border-radius: 30px
+        padding: 60px 40px
+        margin: 50px 0
+        position: relative
+        &::before
+            content: "0" counter(counter)
+            font-weight: 900
+            font-size: 87px
+            display: inline-block
+            line-height: 100%
+            color: #fff
+            text-shadow: 1px 1px 0 #000, -1px -1px 0 #000
+            position: absolute
+            top: -65px
+            left: 30px
+            z-index: -1
+
+        &.pop
+            background-color: $prime
+            color: #fff
+            border-color: $prime
+            box-shadow: -30px 36px 135px -58px $prime
+        // &:nth-child(4)
+        //     margin-top: -20px
+        // &:nth-child(6)
+        //     margin-top: -50px
+
+    .heading
+        font-weight: 700
+        font-size: 18px
+        line-height: 150%
+        margin: 0 0 10px
+
+    .text
+        font-weight: 400
+        font-size: 14px
+        line-height: 150%
+        margin: 0
+
+.order
+    overflow: hidden
+    .container
+        min-height: 80vh
+    h2
+        margin-bottom: 15px
+
+    p
+        max-width: 430px
+        margin-bottom: 25px
+
+    .container
+        align-items: flex-start
+
+    &-title
+        width: 38%
+        .btn
+            font-size: 15px
+            padding: 22px 30px 20px
+            border: 1px solid #000
+            margin-bottom: 70px
+
+    .phone
+        width: 280px
+        margin-bottom: 40px
+
+    &__img
+        width: 60%
+        height: 100%
+        object-fit: contain
+        position: absolute
+        top: 45%
+        transform: translateY(-50%)
+        right: 0
+        z-index: -1
+
+    &-form
+        position: absolute
+        bottom: 10%
+        z-index: 1111
+        left: 30%
+        background-color: #fff
+        width: 400px
+        padding: 60px 50px
+        box-shadow: -40px 15px 100px -51px rgba(0, 0, 0, 0.2)
+        border-radius: 68px
+
+.map
+    text-align: center
+    overflow: hidden
+    .wrap
+        justify-content: center
+        gap: 8px 8px
+
+    .btn
+        display: inline-block
+        padding: 10px 41px 8px 20px
+        line-height: 120%
+        font-size: 14px
+        background-image: url(../img/arrow-down.svg)
+        background-repeat: no-repeat
+        background-position: center right 20px
+        background-size: 15px auto
+        min-width: unset
+
+    span
+        display: inline-block
+        padding: 4px 15px 3px
+        border: 1px solid rgba(0, 0, 0, .2)
+        border-radius: 30px
+        font-size: 14px
+        text-transform: none
+
+        &::first-letter
+            text-transform: uppercase
+
+        &.hidden,
+        &.mob-hidden
+            display: none
+
+        @media screen and ( min-width: 1200px )
+            &.mob-hidden
+                display: inline-block
+
+    &-img
+        position: relative
+        z-index: 1
+        &::before
+            content: ''
+            display: block
+            width: 100vw
+            height: 60%
+            background: linear-gradient(89.99deg, $prime 0.01%, rgba(255, 204, 0, 0) 49.67%, $prime 99.99%)
+            z-index: -1
+            pointer-events: none
+            position: absolute
+            bottom: 20%
+            left: 50%
+            transform: translateX(-50%)
+            opacity: .2
+
+.stackers
+    position: relative
+    z-index: 1
+    &::before
+        position: absolute
+        top: 0%
+        left: 50%
+        transform: translateX(-50%)
+        width: 1685px
+        text-align: left
+        content: 'ШТАБЕЛЕРЫ SHANN'
+        font-weight: 900
+        font-size: 231px
+        line-height: 100%
+        text-transform: uppercase
+        color: #CFCFCF
+        opacity: 0.2
+        z-index: -1
+
+    h2
+        font-weight: bold
+
+    .title
+        max-width: 48%
+
+    .img
+        max-width: 48%
+        position: relative
+        z-index: 1
+        padding: 40px 0
+        &::before
+            content: ''
+            display: block
+            width: 55%
+            position: absolute
+            top: 0
+            right: 0
+            z-index: -1
+            height: 100%
+            background-color: $prime
+            opacity: .15
+
+    ul
+        list-style: none
+        padding: 0
+        li
+            font-weight: 400
+            font-size: 16px
+            line-height: 135%
+            padding-left: 39px
+            background-image: url('../img/check.svg')
+            background-repeat: no-repeat
+            background-position: center left
+            margin-bottom: 24px
+
+.reachtruck
+    position: relative
+    z-index: 1
+    h2
+        font-weight: bold
+    &::before
+        content: ''
+        display: block
+        width: 45%
+        height: 30%
+        left: 0
+        border: 70px solid #E2F8FF
+        position: absolute
+        border-left: none
+        top: 40%
+    &::after
+        content: ''
+        display: block
+        width: 42%
+        height: 50%
+        right: 0
+        border: 70px solid #E2F8FF
+        position: absolute
+        border-right: none
+        top: 20%
+
+    .title
+        max-width: 45%
+        &::before
+            position: absolute
+            top: 0%
+            left: 50%
+            transform: translateX(-50%)
+            width: 1685px
+            text-align: left
+            content: 'Ричтрак SHANN'
+            font-weight: 900
+            font-size: 231px
+            line-height: 100%
+            text-transform: uppercase
+            color: #CFCFCF
+            opacity: 0.2
+            z-index: -1
+
+    .img
+        width: 53%
+        position: relative
+        z-index: 1
+        p
+            position: absolute
+            right: 0
+            bottom: 30%
+            font-size: 15px
+            line-height: 140%
+            max-width: 42%
+
+        img
+            max-height: 900px
+
+    ul
+        list-style: none
+        padding: 0
+        li
+            font-weight: 400
+            font-size: 16px
+            line-height: 135%
+            padding-left: 39px
+            background-image: url('../img/check.svg')
+            background-repeat: no-repeat
+            background-position: center left
+            margin-bottom: 24px
+
+@media screen and ( max-width: 1500px )
+    .main
+        margin-bottom: 0
+        &::before
+            height: 75%
+        &__img
+            right: -13%
+            bottom: auto
+            top: 7%
+            width: 85%
+
+        .container
+            max-width: 1100px
+
+    .stackers,
+    .reachtruck .title
+        &::before
+            width: 1140px
+            max-width: 100%
+            top: 7%
+            font-size: 156px
+
+@media screen and ( max-width: 1200px )
+    .main
+        &::before
+            opacity: .6
+            height: 48%
+            background-size: 120% auto
+
+        h1
+            text-align: center
+
+        &__text
+            font-size: 14px
+
+        &__img
+            width: 110vw
+            max-width: 110vw
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+            display: block
+            margin: 0 auto 30px
+
+        &__text
+            text-align: center
+
+        &-col
+            background-color: transparent
+            margin: 0 auto
+            box-shadow: none
+            padding: 20px 0 0
+            left: 0
+
+        &__text
+            font-size: 18px
+            margin-bottom: 15px
+
+        &-col
+
+        &-item
+            width: 100%
+
+    .photoshoot
+        .slider
+            &::before,
+            &::after
+                height: 160px
+            &::before
+                top: -80px
+            &::after
+                bottom: -80px
+
+            &-item
+                height: 700px
+                margin: 0 4px
+
+    .features
+        h2
+            margin-bottom: 40px
+        ul
+            width: 100%
+            padding: 0
+            margin: 0
+
+        .wrap
+            display: block
+            padding: 0
+        li
+            display: block
+            width: 100%
+            max-width: 100%
+            margin: 0 !important
+            border-radius: 0
+            min-height: unset
+            i
+                display: inline
+
+            &:nth-of-type(odd)
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
+                z-index: 100
+                position: relative
+                // background-color: #5a5a5a
+
+        img
+            width: 100vw
+            max-width: 100vw
+            border-radius: 0
+            position: relative
+            top: auto
+            display: block
+            transform: translateX(-50%)
+
+    .comparison
+        h2
+            margin-bottom: 20px
+        .info
+            font-size: 14px
+            line-height: 130%
+            padding: 17px 30px 15px 70px
+            background-position: center left 18px
+            background-size: 40px auto
+        &-total
+            position: relative
+            top: -10px
+            text-align: center
+            padding: 15px 0
+            background: #e5f8dd
+            line-height: 150%
+            span
+                text-align: center
+        .right,
+        .left
+            width: 100%
+
+        &-img
+            margin-bottom: 30px
+            text-align: center
+            padding: 0 0px 20px
+            img
+                margin: 0
+                width: 500px
+                max-width: 100%
+
+        &-img::before,
+        &-item
+            border-radius: 0 !important
+        &-item
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            padding-top: 0
+            margin-bottom: 30px
+            padding-bottom: 10px
+            img
+                order: 1
+                margin: 0
+                position: relative
+                top: -20px
+            p
+                text-align: center !important
+                order: 2
+                width: 100%
+
+    .guarantee
+        &-title
+            padding: 0 15px
+
+        &-top
+            margin-bottom: 40px
+        &-img
+            width: 100%
+        p
+            margin: 0
+
+        &-slider
+            padding: 0
+            &::before
+                display: none
+
+            .slick
+                &-next
+                    right: 15px
+
+                &-slide
+
+        &-item
+            margin: 0 4px
+            img
+                border-width: 2px
+                border-color: $prime
+
+        &-bottom
+            .guarantee
+                &-title
+                    order: 1
+                    max-width: 100%
+                    margin-bottom: 40px
+
+                &-slider
+                    order: 2
+                    max-width: 100%
+                    width: 100%
+
+    .process
+        ol
+            align-items: stretch
+        li
+            width: 49%
+            position: relative
+            top: auto !important
+            margin: 0 0 60px !important
+            &::before
+                font-size: 60px
+                top: -45px
+
+    .order
+        .container
+            display: block
+        &-title
+            width: 100%
+            p
+                max-width: 100%
+
+        .phone
+            vertical-align: top
+
+        &-img
+            width: 100%
+            margin-top: 60px
+            z-index: 111
+            position: relative
+
+        &-form
+            top: -100px
+            right: 20px
+            left: auto
+            bottom: auto
+            box-shadow: -20px -22px 215px -61px rgb(0 0 0 / 25%)
+
+    .map
+        .wrap
+            gap: 6px 6px
+
+        span
+            padding: 3px 10px 2px
+            font-size: 12px
+
+        .btn
+            font-size: 12px
+            padding: 8px 35px 6px 15px
+            background-position: center right 15px
+
+@media screen and ( max-width: 700px )
+    .main
+        &-item
+            padding: 10px 11px
+            &:nth-child(2)
+                box-shadow: -28px 20px 33px rgba(0, 0, 0, 0.33)
+                position: relative
+                z-index: 1000
+            img
+                width: 54px
+                height: 54px
+
+            p
+                font-size: 14px
+                line-height: 130%
+
+    .features
+        li
+            font-size: 14px
+
+    .comparison
+        .info
+            font-size: 12px
+
+    .photoshoot
+        .slider
+            &::before,
+            &::after
+                width: 180%
+                left: -40%
+                top: -50px
+                height: 100px
+
+            &::after
+                top: auto
+                bottom: -50px
+
+            &-item
+                min-width: unset
+                width: 90vw
+                max-height: 88vh
+                margin: 0 4px
+
+    .process
+        li
+            width: 100%
+            padding: 50px 30px
+
+    .order
+        padding: 0
+        p
+            margin-bottom: 15px
+        &-title
+            margin-bottom: 120px
+            .btn
+                margin-bottom: 30px
+                padding: 16px 20px 14px
+
+        .phone
+            width: 100%
+            margin-bottom: 30px
+            b
+                font-size: 18px
+
+        &-form
+            padding: 50px 30px
+            width: 100%
+            right: 0
+
+        &-img
+            img
+                width: 100vw
+                max-width: 100vw
+                position: relative
+                z-index: -1
+                left: -16px
+                height: 600px
+
+@import 'footer'
