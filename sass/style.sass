@@ -14,15 +14,15 @@
         content: ''
         display: block
         width: 100%
-        height: 54%
+        height: 57%
         z-index: -1
         position: absolute
         top: 0
         left: 0
         background-color: #000
-        background-image: url('../img/galxy.jpg')
+        background-image: url('../img/hugues.jpg')
         background-repeat: no-repeat
-        background-position: center bottom
+        background-position: center
         background-size: cover
 
     h1
@@ -36,7 +36,7 @@
         max-width: 1380px
 
         .btn
-            margin-bottom: 45px
+            margin-bottom: 35px
 
     &-col
         max-width: 400px
@@ -78,15 +78,69 @@
             border-radius: 10px
 
 .features
-    display: none
     .title
+        max-width: 60%
 
     ul
         &.wrap
+            max-width: 80%
+            padding: 0
+            margin: 0
+            margin-bottom: 33px
+            display: flex
+            list-style: none
+            align-items: stretch
+            li
+                min-height: 70px
+                display: inline-flex
+                align-items: center
+                font-size: 15px
+                font-family: Montserrat
+                line-height: 140%
+                width: 50%
+                padding: 10px 36px
+                border-right: 1px solid #00B6FF
+                border-bottom: 1px solid #00B6FF
+                &:nth-of-type(even)
+                    border-right: none
+                &:nth-of-type(5),
+                &:nth-of-type(6)
+                    border-bottom: none
 
     h2
-        margin-bottom: 60px
+        font-size: 46px
+        line-height: 150%
+        margin-bottom: 30px
         text-transform: none
+
+    &-img
+        width: 50%
+        position: absolute
+        right: 0
+        height: 90%
+        top: 0
+        text-align: right
+        &::before
+            content: ''
+            display: block
+            width: 80%
+            height: 80%
+            background-color: red
+            position: absolute
+            z-index: -1
+            top: 0
+            right: 0
+            border-radius: 40px 0 0 40px
+            background-image: url('../img/hugues.jpg')
+            background-repeat: no-repeat
+            background-position: center bottom
+            background-size: cover
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+            object-position: bottom right
+
     .wrap
         position: relative
         z-index: 1
@@ -594,7 +648,7 @@
         margin-bottom: 0
         &::before
             // height: 75%
-            
+
         &__img
             right: -13%
             bottom: auto
