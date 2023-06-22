@@ -6,54 +6,43 @@
 .main
     position: relative
     z-index: 1
-    padding: 0 0 20px
+    padding: 40px 0 20px
     margin-bottom: 80px
     overflow: hidden
-    color: #fff
-    &::before
-        content: ''
-        display: block
-        width: 100%
-        height: 57%
-        z-index: -1
-        position: absolute
-        top: 0
-        left: 0
-        background-color: #000
-        background-image: url('../img/hugues.jpg')
-        background-repeat: no-repeat
-        background-position: center
-        background-size: cover
+    color: #000
 
     h1
+        font-size: 50px
         font-weight: 400
+        max-width: 500px
         margin: 0 0 20px
 
     &__text
         font-size: 20px
 
-    &-content
-        max-width: 1380px
+    .btn
+        margin-bottom: 45px
 
-        .btn
-            margin-bottom: 35px
 
     &-col
         max-width: 400px
         padding: 0 0 0 25px
-        box-shadow: -80px -10px 100px -80px rgba(0, 0, 0, 0.2)
+        box-shadow: -80px 10px 100px -80px rgba(0, 0, 0, 0.2)
         border-radius: 10px
         position: relative
-        left: -25px
+        left: -125px
         z-index: 1
 
     &__img
         position: absolute
-        right: -10%
-        bottom: 1%
+        right: 0
+        bottom: 0%
+        height: 100%
+        object-fit: contain
+        object-position: top right
         width: 76%
         pointer-events: none
-        z-index: 1
+        z-index: -1
 
     &-item
         display: inline-flex

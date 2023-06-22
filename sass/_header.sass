@@ -3,15 +3,10 @@ header
     width: 100%
     z-index: 9999
     transition: all ease .3s
-    padding: 20px 0 60px
-    background: linear-gradient(180deg, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0) 100%)
+    padding: 20px 0 
     .container
         z-index: unset
         max-width: 1980px
-
-    button 
-        color: #fff !important
-        border-color: #fff !important
 
     .logo
         width: 150px
@@ -23,28 +18,29 @@ header
         left: 15px
 
     .phone
-        color: rgba(255, 255, 255, .8)
+        color: rgba(0, 0, 0, .8)
         text-align: right
-        b
-            color: #fff
 
     .nav
-        margin: 0 auto 0 140px
-        padding-right: 30px
+        margin: 0 auto 0 
+        padding-left: 100px
         list-style: none
         a
             display: inline-block
             font-weight: 500
             font-size: 16px
-            color: #fff
+            color: #000
             line-height: 150%
             border-radius: 20px
             padding: 12px 14px 8px
             text-transform: uppercase
-            &:hover
+            opacity: .4
+            &:hover,
+            &.active
                 opacity: 1
-                color: #fff
-                background-color: $prime
+                color: #000
+                text-decoration: underline
+                font-weight: bold
 
         .hidden
             display: none
