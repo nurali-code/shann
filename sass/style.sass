@@ -6,139 +6,176 @@
 .main
     position: relative
     z-index: 1
-    padding: 40px 0 20px
-    margin-bottom: 80px
+    padding: 40px 0 0
+    min-height: 85vh
     overflow: hidden
     color: #000
 
     h1
-        font-size: 50px
+        font-size: 44px
         font-weight: 400
-        max-width: 500px
+        max-width: 450px
         margin: 0 0 20px
 
     &__text
         font-size: 20px
 
-    .btn
-        margin-bottom: 45px
-
-
-    &-col
-        max-width: 400px
-        padding: 0 0 0 25px
-        box-shadow: -80px 10px 100px -80px rgba(0, 0, 0, 0.2)
-        border-radius: 10px
-        position: relative
-        left: -125px
-        z-index: 1
-
     &__img
         position: absolute
         right: 0
-        bottom: 0%
-        height: 100%
+        bottom: -5%
+        height: 106%
         object-fit: contain
         object-position: top right
-        width: 76%
+        width: 78%
         pointer-events: none
         z-index: -1
 
-    &-item
-        display: inline-flex
-        align-items: center
-        background: linear-gradient(90deg, #77B5DD -81.63%, rgba(119, 181, 221, 0) 88.64%), #FFFFFF
-        border-radius: 15px
-        padding: 12px 35px 12px 14px
-        margin: 0 0 10px
-        p
-            font-weight: 400
-            color: #000
-            font-size: 16px
-            line-height: 140%
-            margin: 0 0 0 18px
-            span
-                font-size: 14px
-                opacity: .5
-
-        &.pop
-            background: linear-gradient(90deg, #77B5DD 0%, #000000 266.97%), #FFFFFF
-            box-shadow: -28px 20px 33px rgba(0, 0, 0, 0.25)
-            border-radius: 10px
-
 .features
-    .title
-        max-width: 60%
+    position: relative
+    z-index: 1
+    top: -100px
+    padding: 0 0 80px
+    &::after
+        content: ''
+        display: block
+        width: 100%
+        height: 70%
+        position: absolute
+        bottom: 0
+        left: 0
+        background-color: $prime
+        opacity: .15
+        z-index: -1
 
-    ul
-        &.wrap
-            max-width: 80%
-            padding: 0
+    .container
+        flex-wrap: nowrap
+        max-width: 1400px
+
+    .item
+        display: inline-block
+        border-radius: 36px
+        border: 1px solid rgba(0, 0, 0, 0.26)
+        background: #FFF
+        padding: 40px 10px 45px
+        width: 15.5%
+        text-align: center
+        &:nth-child(2)
+            border: 1px solid rgba(0, 0, 0, 0.26)
+            box-shadow: -10px 21px 56px -7px rgba(0, 0, 0, 0.25)
+        img
+            margin-bottom: 5px
+            opacity: .9
+        p
+            font-size: 16px
+            font-weight: 600
             margin: 0
-            margin-bottom: 33px
-            display: flex
-            list-style: none
-            align-items: stretch
-            li
-                min-height: 70px
-                display: inline-flex
-                align-items: center
-                font-size: 15px
-                font-family: Montserrat
-                line-height: 140%
-                width: 50%
-                padding: 10px 36px
-                border-right: 1px solid #00B6FF
-                border-bottom: 1px solid #00B6FF
-                &:nth-of-type(even)
-                    border-right: none
-                &:nth-of-type(5),
-                &:nth-of-type(6)
-                    border-bottom: none
 
-    h2
-        font-size: 46px
-        line-height: 150%
-        margin-bottom: 30px
-        text-transform: none
+.products
+    justify-content: center
+    gap: 20px
+    max-width: 1500px
+    margin: 0 auto 60px
+.product
+    width: 386px
+    border-radius: 30px
+    border: 1px solid rgba(0, 0, 0, 0.26)
+    background: #FFF
+    display: inline-flex
+    justify-content: center
+    padding-bottom: 22px
+    flex-wrap: wrap
+    overflow: hidden
+    align-items: center
+    position: relative
+    z-index: 1
+    .heading
+        position: absolute
+        top: 20px
+        left: 20px
+        z-index: 111
+        font-weight: 900
+        color: #fff
+        font-size: 26px
 
     &-img
-        width: 50%
-        position: absolute
-        right: 0
-        height: 90%
-        top: 0
-        text-align: right
+        width: 100%
+        height: 250px
+        display: flex
+        align-items: flex-end
+        justify-content: center
+        position: relative
+        z-index: 1
+        img
+            max-width: 100%
+            max-height: 80%
         &::before
             content: ''
             display: block
-            width: 80%
-            height: 80%
-            background-color: red
+            width: 100%
+            height: 70%
             position: absolute
             z-index: -1
             top: 0
-            right: 0
-            border-radius: 40px 0 0 40px
-            background-image: url('../img/hugues.jpg')
-            background-repeat: no-repeat
-            background-position: center bottom
+            left: 0
+            border-radius: 30px
+            background-image: url('../img/galxy.jpg')
             background-size: cover
-        img
-            width: 100%
-            height: 100%
-            object-fit: contain
-            object-position: bottom right
+            background-repeat: no-repeat
 
-    .wrap
-        position: relative
-        z-index: 1
-        max-width: 1700px
-        margin: 0 auto
-        padding: 60px 30px
+    .it
+        width: 30%
+        padding: 0 6px
+        font-size: 12px
+        display: inline-flex
+        img
+            margin-right: 7px
+            max-width: 30px
+
+    .ib
+        display: flex
+        justify-content: center
+        width: 100%
+        .it
+            padding: 0
+            font-weight: bold
+            width: unset
+            img
+                max-width: 40px
+            &::after
+                content: ''
+                display: inline-block
+                width: 1px
+                height: 100%
+                background-color: #000
+                opacity: .2
+                margin: 0 15px
+
+    ul
+        padding-left: 17px
+        margin: 0
+        li
+            font-size: 12px
+            padding: 0
+            margin: 0
+
+    .btn
+        width: 46%
+        padding: 18px 10px 16px
+        font-size: 16px
+        font-weight: 600
+        text-transform: none
+        border-radius: 0 60px 60px 0
+        border: 2px solid $prime
+        box-shadow: none
+        transform-origin: 0% 50%
+        &_outline
+            transform-origin: 100% 50%
+            color: $prime
+            border-radius: 60px 0 0 60px
 
 .docs
-    h2 
+    h2
         margin-bottom: 46px
     .wrap
         align-items: stretch
@@ -684,17 +721,15 @@
 @media screen and ( max-width: 1500px )
     .main
         margin-bottom: 0
-        &::before
-            // height: 75%
 
         &__img
-            right: -13%
+            right: -5%
             bottom: auto
             top: 7%
             width: 85%
 
         &-content
-            max-width: 1100px
+            max-width: 1200px
 
     .stackers,
     .reachtruck .title
