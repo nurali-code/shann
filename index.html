@@ -9,7 +9,9 @@
     <meta name="description"
         content="Инновационные электромобильные погрузчики SHANN предлагают высокую производительность, экологическую чистоту и надежность для вашего бизнеса. Узнайте, как наши погрузчики могут повысить эффективность вашей работы, снизить эксплуатационные расходы и улучшить экологическую ответственность вашей компании. Гарантия нашего сервиса и наличие запасных частей в каждом регионе России обеспечивают безопасную и бесперебойную работу вашей техники">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css?ver=161718">
 </head>
@@ -48,7 +50,7 @@
     <main id="main" class="main">
         <div class="container main-content">
             <h1>Технологии электромобиля в вилочном погрузчике </h1>
-            <button class="btn">подать заявку</button>
+            <button data-modal="modal-form" class="btn">подать заявку</button>
         </div>
         <picture>
             <source media="(min-width: 1200px)" srcset="img/main.jpg">
@@ -115,8 +117,8 @@
                     <li>Charger 115V/50A </li>
                 </ul>
             </div>
-            <button class="btn btn_outline">Комплектация</button>
-            <button class="btn">Узнать цену</button>
+            <button class="btn btn_outline" data-modal="modal-quote">Комплектация</button>
+            <button class="btn" data-modal="modal-form">Узнать цену</button>
         </div>
         <div class="product">
             <h3 class="heading">CPD 25</h3>
@@ -143,12 +145,12 @@
                     АКБ Li-ion
                 </p>
                 <ul>
-                    <li>156V/100Ah</li>
+                    <li>115V/100Ah</li>
                     <li>Charger 115V/50A </li>
                 </ul>
             </div>
-            <button class="btn btn_outline">Комплектация</button>
-            <button class="btn">Узнать цену</button>
+            <button class="btn btn_outline" data-modal="modal-quote">Комплектация</button>
+            <button class="btn" data-modal="modal-form">Узнать цену</button>
         </div>
         <div class="product">
             <h3 class="heading">CPD 30</h3>
@@ -175,12 +177,12 @@
                     АКБ Li-ion
                 </p>
                 <ul>
-                    <li>156V/100Ah</li>
-                    <li>Charger 115V/50A </li>
+                    <li>156V/230Ah</li>
+                    <li>Charger 156V/100A </li>
                 </ul>
             </div>
-            <button class="btn btn_outline">Комплектация</button>
-            <button class="btn">Узнать цену</button>
+            <button class="btn btn_outline" data-modal="modal-quote">Комплектация</button>
+            <button class="btn" data-modal="modal-form">Узнать цену</button>
         </div>
         <div class="product">
             <h3 class="heading">CPD 35</h3>
@@ -207,12 +209,12 @@
                     АКБ Li-ion
                 </p>
                 <ul>
-                    <li>156V/100Ah</li>
-                    <li>Charger 115V/50A </li>
+                    <li>156V/230Ah</li>
+                    <li>Charger 156V/100A </li>
                 </ul>
             </div>
-            <button class="btn btn_outline">Комплектация</button>
-            <button class="btn">Узнать цену</button>
+            <button class="btn btn_outline" data-modal="modal-quote">Комплектация</button>
+            <button class="btn" data-modal="modal-form">Узнать цену</button>
         </div>
         <div class="product">
             <h3 class="heading">CPD 50</h3>
@@ -239,12 +241,12 @@
                     АКБ Li-ion
                 </p>
                 <ul>
-                    <li>156V/100Ah</li>
-                    <li>Charger 115V/50A </li>
+                    <li>156V/280Ah</li>
+                    <li>Charger 156V/100A </li>
                 </ul>
             </div>
-            <button class="btn btn_outline">Комплектация</button>
-            <button class="btn">Узнать цену</button>
+            <button class="btn btn_outline" data-modal="modal-quote">Комплектация</button>
+            <button class="btn" data-modal="modal-form">Узнать цену</button>
         </div>
     </div>
 
@@ -253,7 +255,7 @@
             <h2>Экономическая эффективность электропогрузчика <b>CPD 35 HE Li-ion JAC</b></h2>
             <p class="info">
                 Расчеты приведены в отчете об эксплуатационном ресурсе дизельного погрузчика и электрического погрузчика
-                серии HE в течение одного года (1200 моточасов).
+                серии SHANN в течение одного года (1200 моточасов).
             </p>
         </div>
         <div class="wrap">
@@ -261,7 +263,7 @@
                 <p class="comparison-heading">
                     <span>
                         CPD 35
-                        <b>HE Li-ion JAC</b>
+                        <b>SHANN LI-ion</b>
                     </span>
                 </p>
                 <div class="comparison-img">
@@ -291,8 +293,8 @@
             <div class="right">
                 <p class="comparison-heading">
                     <span>
-                        CPD 35
-                        <b>35 JAC <mark>дизель</mark></b>
+                        CPCD 35
+                        <b>JAC <mark>дизель</mark></b>
                     </span>
                 </p>
                 <div class="comparison-img">
@@ -311,6 +313,81 @@
                         <b>103 000 ₽</b>
                         на сервис и обслуживание
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wides">
+        <div class="container">
+            <h2><b>Штабелеры</b> SHANN LI-Ion CDD</h2>
+            <div class="wrap">
+                <div class="wide">
+                    <img class="wide__img" src="img/r-1.png" alt="cpd">
+                    <h3 class="heading">Штабелер <br> с подножкой </h3>
+                    <p class="it">
+                        <img src="img/delivery.svg" alt="img">
+                        <span>Грузоподъемность: <br> <b>1,5 тонны </b></span>
+                    </p>
+                    <p class="it">
+                        <img src="img/cash.svg" alt="img">
+                        <span>
+                            Высота подьема: <br>
+                            <b>до 6 м</b>
+                        </span>
+                    </p>
+                    <p class="it">
+                        <img src="img/batteryfull.svg" alt="img">
+                        Батарея <br>
+                        Li-ion 24v/150Ah
+                    </p>
+                    <div class="wrap">
+                        <p class="it">
+                            <img src="img/delivery.svg" alt="img">
+                            Доставка <br>
+                            в подарок
+                        </p>
+                        <p class="it">
+                            <img src="img/cash.svg" alt="img">
+                            Доступен <br>
+                            в Лизинг
+                        </p>
+                    </div>
+                    <button class="btn" data-modal="modal-form">Узнать цену</button>
+                </div>
+
+                <div class="wide reverce">
+                    <img class="wide__img" src="img/r-2.png" alt="cpd">
+                    <h3 class="heading">Штабелер <br> без подножки</h3>
+                    <p class="it">
+                        <img src="img/delivery.svg" alt="img">
+                        <span>Грузоподъемность: <br> <b>1.5-2 тонн </b></span>
+                    </p>
+                    <p class="it">
+                        <img src="img/cash.svg" alt="img">
+                        <span>
+                            Высота подьема: <br>
+                            <b>до 6,5 м</b>
+                        </span>
+                    </p>
+                    <p class="it">
+                        <img src="img/batteryfull.svg" alt="img">
+                        Батарея <br>
+                        Li-ion 24v/150Ah
+                    </p>
+                    <div class="wrap">
+                        <p class="it">
+                            <img src="img/delivery.svg" alt="img">
+                            Доставка <br>
+                            в подарок
+                        </p>
+                        <p class="it">
+                            <img src="img/cash.svg" alt="img">
+                            Доступен <br>
+                            в Лизинг
+                        </p>
+                    </div>
+                    <button class="btn" data-modal="modal-form">Узнать цену</button>
                 </div>
             </div>
         </div>
