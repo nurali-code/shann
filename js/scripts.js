@@ -1,14 +1,15 @@
 $(document).ready(function () {
-    // AOS.init({
-    //     duration: 1000,
-    //     offset: 100,
-    // });
-    /*---------------------------------------------------end*/
 
     $('.btn-menu').on('click', function () {
         $(this).toggleClass('active');
-        $('header, body').toggleClass('active');
+        $('header, body').toggleClass('actives');
     })
+    $('.nav a').on('click', function () {
+        $('.nav a, .btn-menu').removeClass('active');
+        $(this).addClass('active');
+        $('header, body').removeClass('actives');
+    })
+
     $("#showAll").click(function () {
         $(this).remove();
         $(".map .hidden, .map .mob-hidden").removeClass("hidden mob-hidden");

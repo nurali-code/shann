@@ -45,7 +45,9 @@
             margin-bottom: 10px
             fieldset
                 width: 49%
-        fieldset
+        
+        .mt 
+            margin-top: 10px
 
         .btn
             margin-top: 5px
@@ -65,8 +67,8 @@
         font-size: 19px
         background-color: rgba($black, .2)
         color: $black
-        width: 36px
         line-height: 38px
+        width: 36px
         height: 36px
 
     &.active
@@ -83,14 +85,15 @@
         &-close
             top: 24px
             right: 24px
-            width: 24px
             line-height: 25px
-            height: 24px
+            width: 30px
+            height: 30px
             font-size: 14px
 
     @media screen and ( max-width: 700px )
         &-content
-            padding: 30px 16px 35px
+            padding: 40px 30px 35px
+            border-radius: 30px
             .inp-wrap
                 width: 100%
 
@@ -104,10 +107,10 @@
                 margin-top: 20px
 
         &-close
-            top: 17px
+            top: 10px
             right: 16px
             line-height: 25px
-            font-size: 14px
+            font-size: 20px
 
 @keyframes slideRight
     0%
