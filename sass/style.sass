@@ -49,7 +49,6 @@
         z-index: -1
 
     .container
-        flex-wrap: nowrap
         max-width: 1400px
 
     .item
@@ -76,6 +75,7 @@
     gap: 20px
     max-width: 1500px
     margin: 0 auto 60px
+
 .product
     width: 386px
     border-radius: 30px
@@ -124,10 +124,14 @@
             background-repeat: no-repeat
 
     .it
-        width: 30%
+        width: 31%
         padding: 0 6px
         font-size: 12px
+        margin-bottom: 20px
+        line-height: 130%
         display: inline-flex
+        justify-content: center
+        align-items: center
         img
             margin-right: 7px
             max-width: 30px
@@ -169,6 +173,7 @@
         border: 2px solid $prime
         box-shadow: none
         transform-origin: 0% 50%
+        min-width: unset
         &_outline
             transform-origin: 100% 50%
             color: $prime
@@ -183,7 +188,7 @@
         position: relative
         width: 32%
         border-radius: 65px
-        border: 1px solid #000
+        border: 1px solid rgba(0, 0, 0, .5)
         background-color: #FFF
         padding: 70px 50px 150px
         &::before
@@ -194,11 +199,11 @@
             position: absolute
             top: -2px
             right: -2px
-            background-color: #fff
+            // background-color: #fff
             background-image: url('../img/edge.svg')
             background-repeat: no-repeat
             background-position: top right
-            background-size: cover
+            background-size: contain
             pointer-events: none
 
         i
@@ -221,6 +226,7 @@
             bottom: 50px
 
         &.pop
+            z-index: 111
             box-shadow: -62px 77px 70px -52px rgba(0, 0, 0, 0.25)
 
 .comparison
@@ -392,45 +398,6 @@
         .guarantee-title
             max-width: 30%
 
-.photoshoot
-    overflow: hidden
-    padding: 0 0
-    h2
-        text-align: center
-        max-width: 520px
-        margin-bottom: 0px
-
-    .slider
-        overflow: hidden
-        position: relative
-        &::before,
-        &::after
-            content: ''
-            display: block
-            width: 120%
-            height: 220px
-            position: absolute
-            left: -10%
-            top: -120px
-            z-index: 1
-            background-color: #fff
-            border-radius: 50%
-            pointer-events: none
-        &::after
-            top: auto
-            bottom: -120px
-
-        &-item
-            // min-width: 500px
-            // width: 500px
-            height: 850px
-            max-height: 115vh
-            margin: 0 7px
-            img
-                height: 100%
-                width: 100%
-                object-fit: cover
-
 .process
     padding: 0 0 60px
     h2
@@ -589,135 +556,6 @@
             transform: translateX(-50%)
             opacity: .2
 
-.stackers
-    position: relative
-    z-index: 1
-    overflow: hidden
-    &::before
-        position: absolute
-        top: 0%
-        left: 50%
-        transform: translateX(-50%)
-        width: 1685px
-        text-align: left
-        content: 'ШТАБЕЛЕРЫ SHANN'
-        font-weight: 900
-        font-size: 231px
-        line-height: 100%
-        text-transform: uppercase
-        color: #CFCFCF
-        opacity: 0.2
-        z-index: -1
-
-    h2
-        font-weight: bold
-
-    .title
-        max-width: 48%
-
-    .img
-        max-width: 48%
-        position: relative
-        z-index: 1
-        padding: 40px 0
-        &::before
-            content: ''
-            display: block
-            width: 55%
-            position: absolute
-            top: 0
-            right: 0
-            z-index: -1
-            height: 100%
-            background-color: $prime
-            opacity: .15
-
-    ul
-        list-style: none
-        padding: 0
-        li
-            font-weight: 400
-            font-size: 16px
-            line-height: 135%
-            padding-left: 39px
-            background-image: url('../img/check.svg')
-            background-repeat: no-repeat
-            background-position: center left
-            margin-bottom: 24px
-
-.reachtruck
-    position: relative
-    overflow: hidden
-    z-index: 1
-    h2
-        font-weight: bold
-    &::before
-        content: ''
-        display: block
-        width: 45%
-        height: 30%
-        left: 0
-        border: 70px solid #E2F8FF
-        position: absolute
-        border-left: none
-        top: 40%
-    &::after
-        content: ''
-        display: block
-        width: 42%
-        height: 50%
-        right: 0
-        border: 70px solid #E2F8FF
-        position: absolute
-        border-right: none
-        top: 20%
-
-    .title
-        max-width: 45%
-        &::before
-            position: absolute
-            top: 0%
-            left: 50%
-            transform: translateX(-50%)
-            width: 1685px
-            text-align: left
-            content: 'Ричтрак SHANN'
-            font-weight: 900
-            font-size: 231px
-            line-height: 100%
-            text-transform: uppercase
-            color: #CFCFCF
-            opacity: 0.2
-            z-index: -1
-
-    .img
-        width: 53%
-        position: relative
-        z-index: 1
-        p
-            position: absolute
-            right: 0
-            bottom: 30%
-            font-size: 15px
-            line-height: 140%
-            max-width: 42%
-
-        img
-            max-height: 900px
-
-    ul
-        list-style: none
-        padding: 0
-        li
-            font-weight: 400
-            font-size: 16px
-            line-height: 135%
-            padding-left: 39px
-            background-image: url('../img/check.svg')
-            background-repeat: no-repeat
-            background-position: center left
-            margin-bottom: 24px
-
 @media screen and ( max-width: 1500px )
     .main
         margin-bottom: 0
@@ -741,23 +579,25 @@
 
 @media screen and ( max-width: 1200px )
     .main
+        min-height: unset
         &::before
             height: 48%
 
         h1
-            text-align: center
+            text-align: left
 
         &__text
             font-size: 14px
 
         &__img
-            width: 110vw
-            max-width: 110vw
+            width: 100%
+            max-width: 100vw
             position: relative
-            left: 50%
-            transform: translateX(-50%)
+            left: 0
+            bottom: 80px
+            right: 0
             display: block
-            margin: 0 auto 30px
+            margin: 0 auto 0
 
         &__text
             text-align: center
@@ -778,55 +618,27 @@
         &-item
             width: 100%
 
-    .photoshoot
-        .slider
-            &::before,
-            &::after
-                height: 160px
-            &::before
-                top: -80px
-            &::after
-                bottom: -80px
-
-            &-item
-                height: 700px
-                margin: 0 4px
-
     .features
-        h2
-            margin-bottom: 40px
-        ul
-            width: 100%
+        top: 0
+        .item
+            width: 32%
+            margin-bottom: 20px
+
+    .products
+        padding: 20px 16px 0
+        margin-bottom: 40px
+
+    .product
+        width: 48%
+        .it
+            min-width: 100px
+            width: 32%
+            font-size: 11px
             padding: 0
-            margin: 0
 
-        .wrap
-            display: block
-            padding: 0
-        li
-            display: block
-            width: 100%
-            max-width: 100%
-            margin: 0 !important
-            border-radius: 0
-            min-height: unset
-            i
-                display: inline
-
-            &:nth-of-type(odd)
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
-                z-index: 100
-                position: relative
-                // background-color: #5a5a5a
-
-        img
-            width: 100vw
-            max-width: 100vw
-            border-radius: 0
-            position: relative
-            top: auto
-            display: block
-            transform: translateX(-50%)
+        .ib 
+            .it 
+                font-size: 12px
 
     .comparison
         h2
@@ -931,6 +743,28 @@
                 font-size: 60px
                 top: -45px
 
+    .docs
+        .item
+            width: 49%
+            padding: 50px 30px 100px
+            margin-bottom: 30px
+            &::before
+                width: 63px
+                height: 66px
+
+            h3
+                font-size: 20px
+                max-width: 90%
+
+            .btn
+                left: 27px
+                bottom: 34px
+                padding: 20px 24px 17px
+                img 
+                    display: inline-block
+                    vertical-align: middle
+                    margin-bottom: 3px
+
     .order
         .container
             display: block
@@ -970,23 +804,47 @@
 
 @media screen and ( max-width: 700px )
     .main
-        &-item
-            padding: 10px 11px
-            &:nth-child(2)
-                box-shadow: -28px 20px 33px rgba(0, 0, 0, 0.33)
-                position: relative
-                z-index: 1000
-            img
-                width: 54px
-                height: 54px
+        padding-bottom: 100px
+        h1 
+            text-transform: none
+            font-size: 27px
+            margin-bottom: 30px
 
-            p
-                font-size: 14px
-                line-height: 130%
+        &__img 
+            bottom: 0
+
+        .container
+            position: static 
+
+        .btn 
+            position: absolute
+            bottom: 50px
+            left: 16px
+            width: 290px
 
     .features
-        li
-            font-size: 14px
+        margin-bottom: 60px
+        padding-bottom: 40px
+        &::after
+            height: 55%
+        .item
+            width: 49%
+            margin-bottom: 15px
+            img
+                width: 60px
+            p
+                font-size: 14px
+
+
+    .product
+        width: 100%
+        max-width: 400px
+        margin: 0 auto 30px
+
+    .docs
+        .item 
+            width: 100%
+            min-height: 400px
 
     .comparison
         .info
