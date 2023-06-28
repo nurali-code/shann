@@ -182,9 +182,9 @@
     .text
         text-align: center
         max-width: 840px
-        margin: 0 auto 
+        margin: 0 auto
 
-    .wrap 
+    .wrap
         margin-top: 100px
 
     .container
@@ -251,56 +251,6 @@
                 left: auto
                 right: -80px
                 width: 300px
-
-.docs
-    h2
-        margin-bottom: 46px
-    .wrap
-        align-items: stretch
-    .item
-        position: relative
-        width: 32%
-        border-radius: 65px
-        border: 1px solid rgba(0, 0, 0, .5)
-        background-color: #FFF
-        padding: 70px 50px 150px
-        &::before
-            content: ''
-            display: block
-            width: 97px
-            height: 102px
-            position: absolute
-            top: -2px
-            right: -2px
-            // background-color: #fff
-            background-image: url('../img/edge.svg')
-            background-repeat: no-repeat
-            background-position: top right
-            background-size: contain
-            pointer-events: none
-
-        i
-            font-style: normal
-            white-space: nowrap
-
-        h3
-            text-transform: none
-            font-size: 24px
-            font-weight: 700
-            line-height: 150%
-
-        p
-            font-size: 14px
-            line-height: 150%
-
-        .btn
-            position: absolute
-            left: 50px
-            bottom: 50px
-
-        &.pop
-            z-index: 111
-            box-shadow: -62px 77px 70px -52px rgba(0, 0, 0, 0.25)
 
 .comparison
     mark
@@ -532,7 +482,7 @@
     overflow: hidden
     .container
         min-height: 750px
-    
+
     h2
         margin-bottom: 15px
 
@@ -544,11 +494,12 @@
         align-items: flex-start
 
     &-title
-        width: 38%
+        width: 40%
         .btn
             font-size: 15px
             padding: 22px 30px 20px
-            border: 1px solid #000
+            left: -15px
+            position: relative
             margin-bottom: 70px
 
     .phone
@@ -567,13 +518,13 @@
 
     &-form
         position: absolute
-        bottom: 10%
+        bottom: 5%
         z-index: 1111
         left: 30%
         background-color: #fff
         width: 400px
         padding: 60px 50px
-        box-shadow: -40px 15px 100px -51px rgba(0, 0, 0, 0.2)
+        box-shadow: -40px 15px 100px -51px rgba(0, 0, 0, 0.4)
         border-radius: 68px
 
 .map
@@ -817,34 +768,17 @@
                 font-size: 60px
                 top: -45px
 
-    .docs
-        .item
-            width: 49%
-            padding: 50px 30px 100px
-            margin-bottom: 30px
-            &::before
-                width: 63px
-                height: 66px
-
-            h3
-                font-size: 20px
-                max-width: 90%
-
-            .btn
-                left: 27px
-                bottom: 34px
-                padding: 20px 24px 17px
-                img
-                    display: inline-block
-                    vertical-align: middle
-                    margin-bottom: 3px
-
     .order
+        padding: 0 0 300px
+
         .container
             display: block
+            min-height: unset
+            position: static
 
         &-title
             width: 100%
+
             p
                 max-width: 100%
 
@@ -852,18 +786,24 @@
             vertical-align: top
 
         &__img
-            width: 100%
-            margin-top: 60px
-            z-index: -1
+            width: 100vw
+            max-width: 100vw
             position: relative
+            z-index: -1
+            margin: 0
+            top: auto
+            transform: none
+            left: -16px
+            right: auto
+            bottom: auto
+            height: unset
 
         &-form
-            top: auto
-            bottom: 10%
-            right: 20px
-            z-index: 111
+            padding: 50px 30px
+            width: 90%
+            right: 5%
             left: auto
-            bottom: auto
+            bottom: 40px
             box-shadow: -20px -22px 215px -61px rgb(0 0 0 / 25%)
 
     .map
@@ -932,15 +872,10 @@
         .ib
             gap: 0 10px
 
-        .btn 
+        .btn
             border-width: 1px
             font-weight: 500
             font-size: 14px
-
-    .docs
-        .item
-            width: 100%
-            min-height: 400px
 
     .comparison
         .info
@@ -971,17 +906,18 @@
             padding: 50px 30px
 
     .order
-        padding: 0 0 200px
         p
             margin-bottom: 15px
         .container
             position: static
             min-height: unset
+
         &-title
             margin-bottom: 0
             .btn
                 margin-bottom: 30px
                 padding: 16px 20px 14px
+                left: 0
 
         .phone
             width: 100%
@@ -989,24 +925,7 @@
             b
                 font-size: 18px
 
-        &-form
-            padding: 50px 30px
-            width: 90%
-            right: 5%
-            bottom: 0
 
-        &__img
-            width: 100vw
-            max-width: 100vw
-            position: relative
-            z-index: -1
-            margin: 0
-            top: auto
-            transform: none
-            left: -16px
-            right: auto
-            bottom: auto
-            height: unset
 
     .wides
         h2
@@ -1048,7 +967,6 @@
             margin: 0 20px 10px 0
             &:nth-child(2n+2)
                 margin-right: 2px
-                
 
         .wrap
             margin-top: 10px

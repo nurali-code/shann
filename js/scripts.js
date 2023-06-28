@@ -52,6 +52,7 @@ $(document).ready(function () {
                 ($(e.target).parents('.btn-menu').length) ||
                 ($(e.target).hasClass('nav')) ||
                 ($(e.target).hasClass('btn-menu')) ||
+                ($(e.target).hasClass('btn__link')) ||
                 ($(e.target).hasClass('btn')) ||
                 ($(e.target).hasClass('modal-content'))
             )) {
