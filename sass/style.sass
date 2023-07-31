@@ -3,6 +3,7 @@
 @import 'header'
 @import 'modal'
 @import 'future'
+@import 'leasing'
 
 .main
     position: relative
@@ -75,6 +76,9 @@
             font-size: 16px
             font-weight: 600
             margin: 0
+
+    &.second
+        top: -50px
 
 .products
     justify-content: center
@@ -214,6 +218,7 @@
             width: 47%
             padding: 3px 0 
             font-size: 13px
+            line-height: 140%
             &::first-letter
                 text-transform: uppercase
 
@@ -680,9 +685,9 @@
         top: 0
         .wrap
             gap: 20px 2%
+        
         .item
             width: 32%
-            margin-bottom: 20px
 
     .products
         padding: 20px 16px 0
@@ -895,11 +900,12 @@
         padding-bottom: 40px
         .wrap 
             gap: 20px 2%
+        
         &::after
             height: 55%
+        
         .item
             width: 49%
-            // margin-bottom: 15px
             img
                 width: 60px
             p
@@ -980,6 +986,7 @@
 
             li 
                 width: 100%
+    
     .wide
         padding: 0 20px 30px 30px !important
         width: 100%
