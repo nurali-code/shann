@@ -160,6 +160,7 @@ $(document).ready(function () {
             data: $(this).serialize()
         }).done(function () {
             $('form .btn').removeClass('loading');
+            ym(94543622, 'reachGoal', 'zayavka');
             $('form').trigger('reset');
             alert('Спасибо за заявку. Ожидайте с вами свяжется специалист!');
         }); return false;
